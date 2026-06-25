@@ -10,7 +10,13 @@ pipeline{
                 retry(2)
             }
             steps{
-                sh "mkdir jenkins-test || true"
+                sh """
+                    if [! -d jenkins-test]; then 
+                    mkdir jenkins-test
+                    else
+                    echo 'already exists'
+                    fi
+                """
             }
         }
         stage("add a file"){
