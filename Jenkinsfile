@@ -1,11 +1,11 @@
 stages {
 
     stage('Clean Up') {
-        ...
+       
     }
 
     stage('Set Up Network') {
-        ...
+        
     }
 
     stage('Build Images') {
@@ -32,13 +32,13 @@ stages {
 
     stage('Run Containers') {
         steps {
-            ...
+           
         }
     }
 
     stage('Manual Check') {
         steps {
-            ...
+          
         }
     }
 }
